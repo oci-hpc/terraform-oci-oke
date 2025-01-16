@@ -11,6 +11,7 @@ variable "bastion_user" { type = string }
 
 # Operator
 variable "assign_dns" { type = bool }
+variable "await_cloudinit" { type = bool }
 variable "availability_domain" { type = string }
 variable "cloud_init" { type = list(map(string)) }
 variable "image_id" { type = string }
